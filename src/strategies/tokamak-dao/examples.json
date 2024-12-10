@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Example query",
+    "strategy": {
+      "name": "tokamak-dao",
+      "params": {
+        "ton": {
+          "name": "erc20-balance-of",
+          "params": {
+            "address": "0x2be5e8c109e2197D077D13A82dAead6a9b3433C5",
+            "symbol": "TON",
+            "decimals": 18
+          }
+        },
+        "wton": {
+          "name": "erc20-balance-of",
+          "params": {
+            "address": "0xc4A11aaf6ea915Ed7Ac194161d2fC9384F15bff2",
+            "symbol": "WTON",
+            "decimals": 27
+          }
+        },
+        "swton": {
+          "name": "staked-ton-balance-of",
+          "params": {
+            "address": "0x0b55a0f463b6defb81c6063973763951712d0e5f",
+            "symbol": "SWTON"
+          }
+        },
+        "tokamaknft": {
+          "name": "erc721",
+          "params": {
+            "address": "0x073afd0ca0b12da8543e67b664dbf9fcc03fca99",
+            "symbol": "TOK"
+          }
+        }
+      }
+    },
+    "network": "1",
+    "addresses": [
+      "0x4D145A5e90736ad71cBF0081366625BD9eb170Cc",
+      "0x2be5e8c109e2197D077D13A82dAead6a9b3433C5",
+      "0xe2e54270813c5c44a6f97d123120952a12b00000",
+      "0x757DE9c340c556b56f62eFaE859Da5e08BAAE7A2",
+      "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11",
+      "0xeF8305E140ac520225DAf050e2f71d5fBcC543e7",
+      "0x1E1A51E25f2816335cA436D65e9Af7694BE232ad",
+      "0x1F717Ce8ff07597ee7c408b5623dF40AaAf1787C",
+      "0x1c7a9275F2BD5a260A9c31069F77d53473b8ae2e",
+      "0x1d5E65a087eBc3d03a294412E46CE5D6882969f4"
+    ],
+    "snapshot": 21364101
+  }
+]
