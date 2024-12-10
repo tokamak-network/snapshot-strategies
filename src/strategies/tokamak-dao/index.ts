@@ -35,6 +35,8 @@ export async function strategy(
 ) {
   const tonStrategy = _strategies[options.ton.name].strategy;
   const wtonStrategy = _strategies[options.wton.name].strategy;
+  const swtonStrategy = _strategies[options.swton.name].strategy;
+
   // const tkamakNftStrategy = _strategies[options.ton.name].strategy;
 
   const tonVotes = await tonStrategy(
@@ -58,6 +60,17 @@ export async function strategy(
 
   // console.log('wtonVotes', wtonVotes);
 
+  const swtonVotes = await swtonStrategy(
+    space,
+    network,
+    provider,
+    addresses,
+    options.swton.params,
+    snapshot
+  );
+
+  // console.log('swtonVotes', swtonVotes);
+
   // const tkamakNftVotes = await tkamakNftStrategy(
   //   space,
   //   network,
@@ -68,16 +81,17 @@ export async function strategy(
   // );
   // console.log('tkamakNftVotes', tkamakNftVotes);
 
-  const calculateVotes = (tList, wList, a) => {
+  const calculateVotes = (tList, wList, swList, a) => {
     const tonBalance = tList[a] ? tList[a] : 0;
     const wtonBalance = wList[a] ? wList[a] : 0;
-    return tonBalance + wtonBalance;
+    const swtonBalance = swList[a] ? swList[a] : 0;
+    return tonBalance + wtonBalance + swtonBalance;
   };
 
   return Object.fromEntries(
     Object.entries(addresses).map((address: any) => [
       getAddress(address[1]),
-      calculateVotes(tonVotes, wtonVotes, address[1])
+      calculateVotes(tonVotes, wtonVotes, swtonVotes, address[1])
     ])
   );
 }

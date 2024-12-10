@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Example query",
+    "strategy": {
+      "name": "simple-staking-ton-balance-of",
+      "params": {
+        "address": "0x0b55a0f463b6defb81c6063973763951712d0e5f",
+        "symbol": "SWTON",
+        "decimals": 27
+      }
+    },
+    "network": "1",
+    "addresses": [
+      "0x36f917BBd70d31F0501fCe2Cd1756A977d783E44",
+      "0xeF8305E140ac520225DAf050e2f71d5fBcC543e7",
+      "0x26478D2e7Af7E1503314abeF8B6634c0fD17357c",
+      "0xFCEBc1c6cdFf634B7818CC0C3DCcc050857d12DA"
+    ],
+    "snapshot": 21364101
+  }
+]

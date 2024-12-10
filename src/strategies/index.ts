@@ -467,6 +467,7 @@ import * as fountainhead from './fountainhead';
 import * as naymsStaking from './nayms-staking';
 import * as morphoDelegation from './morpho-delegation';
 import * as tokamakDao from './tokamak-dao';
+import * as stakedTon from './simple-staking-ton-balance-of';
 
 const strategies = {
   'delegatexyz-erc721-balance-of': delegatexyzErc721BalanceOf,
@@ -944,7 +945,8 @@ const strategies = {
   fountainhead,
   'nayms-staking': naymsStaking,
   'morpho-delegation': morphoDelegation,
-  'tokamak-dao': tokamakDao
+  'tokamak-dao': tokamakDao,
+  'simple-staking-ton-balance-of': stakedTon
 };
 
 Object.keys(strategies).forEach(function (strategyName) {
