@@ -4,6 +4,28 @@
     "strategy": {
       "name": "tokamak-dao",
       "params": {
+        "weight": {
+          "ton": {
+            "operation": "sqrt",
+            "value": 0
+          } ,
+          "wton":  {
+            "operation": "div",
+            "value": 10
+          },
+          "swton":  {
+            "operation": "none",
+            "value": 1
+          },
+          "tokamakNft":  {
+            "operation": "add",
+            "value": 10000
+          },
+          "titanNft":  {
+            "operation": "except",
+            "value": 0
+          }
+        },
         "ton": {
           "name": "erc20-balance-of",
           "params": {
@@ -28,11 +50,18 @@
             "decimals": 27
           }
         },
-        "tokamaknft": {
+        "tokamakNft": {
           "name": "erc721",
           "params": {
             "address": "0x073afd0ca0b12da8543e67b664dbf9fcc03fca99",
             "symbol": "TOK"
+          }
+        },
+        "titanNft": {
+          "name": "erc721",
+          "params": {
+            "address": "0x0000000000000000000000000000000000000000",
+            "symbol": "TITAN"
           }
         }
       }
