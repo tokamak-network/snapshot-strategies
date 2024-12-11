@@ -466,7 +466,7 @@ import * as sacraSubgraph from './sacra-subgraph';
 import * as fountainhead from './fountainhead';
 import * as naymsStaking from './nayms-staking';
 import * as morphoDelegation from './morpho-delegation';
-import * as tokamakDao from './tokamak-dao';
+import * as tokamakNetworkDao from './tokamak-network-dao';
 import * as stakedTon from './simple-staking-ton-balance-of';
 
 const strategies = {
@@ -945,7 +945,7 @@ const strategies = {
   fountainhead,
   'nayms-staking': naymsStaking,
   'morpho-delegation': morphoDelegation,
-  'tokamak-dao': tokamakDao,
+  'tokamak-network-dao': tokamakNetworkDao,
   'simple-staking-ton-balance-of': stakedTon
 };
 

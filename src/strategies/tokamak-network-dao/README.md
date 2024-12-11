@@ -1,4 +1,4 @@
-# Tokamak DAO voting strategy
+# Tokamak Network DAO voting strategy
 
 The voting rights are calculated proportionally based on the following assets:
 
@@ -56,7 +56,7 @@ Here is an example of parameters:
 
 ```json
 {
-      "name": "tokamak-dao",
+      "name": "tokamak-network-dao",
        "params": {
         "weight": {
           "ton": {

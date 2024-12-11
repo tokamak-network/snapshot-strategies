@@ -2,15 +2,15 @@
   {
     "name": "Example query",
     "strategy": {
-      "name": "tokamak-dao",
+      "name": "tokamak-network-dao",
       "params": {
         "weight": {
           "ton": {
-            "operation": "sqrt",
+            "operation": "none",
             "value": 0
           } ,
           "wton":  {
-            "operation": "div",
+            "operation": "none",
             "value": 10
           },
           "swton":  {
