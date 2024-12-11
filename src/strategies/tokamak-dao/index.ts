@@ -119,7 +119,7 @@ export async function strategy(
     // console.log('wtonVotes', wtonVotes);
   }
 
-  if (options.weight.wton.operation != 'except') {
+  if (options.weight.swton.operation != 'except') {
     swtonVotes = await _strategies[options.swton.name].strategy(
       space,
       network,
